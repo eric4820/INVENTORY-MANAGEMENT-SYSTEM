@@ -1,0 +1,4 @@
+{
+    "mongoURL": "mongodb+srv://eric:@Eric2021@cluster0.oqbpj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "hospy"
+} 
