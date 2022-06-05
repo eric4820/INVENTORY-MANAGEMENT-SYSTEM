@@ -9,8 +9,8 @@
 /coverage
 
 # production
-/build
-echo node_modules/ >.gitignore
+#/build
+#echo node_modules/ >.gitignore
 
 # misc
 .DS_Store
