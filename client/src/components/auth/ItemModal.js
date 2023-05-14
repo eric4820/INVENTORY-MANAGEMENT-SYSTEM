@@ -232,25 +232,9 @@ componentDidUpdate(prevProps){
         </div> 
     
     return (
-     <div>{
-      employee && employee.role==="STORE KEEPER" ? ( 
-            
-        <Button
-        className="btn-secondary"
-          color="dark"
-          
-          onClick={this.toggle}
-        >
-          RECEIVE INVENTORY
-        </Button>):null}
-        <Modal
-            isOpen={this.state.modal} toggle={this.toggle}>
-            <ModalHeader toggle={this.toggle}>Add product details to receive inventory. 
-            </ModalHeader>
-            <ModalBody>
-                {this.state.msg ? 
-                ( <Alert  color='danger'>{this.state.msg}</Alert>): null}
-                <Form onSubmit={this.onSubmit}>
+     <div>
+       
+                <Form className='form' onSubmit={this.onSubmit}>
                     <FormGroup>
                     <Label for="Email"> Supplier Email</Label>
                         <Input
@@ -323,8 +307,7 @@ componentDidUpdate(prevProps){
                         </Button>
                     </FormGroup>
                 </Form>
-            </ModalBody>
-        </Modal>           
+                      
      </div>
      );
    }

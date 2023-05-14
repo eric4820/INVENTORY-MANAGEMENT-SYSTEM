@@ -899,25 +899,7 @@ description ==="NOSEMASKS")
 {this.state.description==="GLOVES"?(<> { maxquantity= RGLOVES-DGLOVES}</>):null}
 {this.state.description==="NOSEMASKS"?(<> { maxquantity= RNOSEMASKS-DNOSEMASKS}</>):null}
 
-
-
-
-
-
-
-
-
-
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+     
         {this.state.product==="shampoo"?(<> {  productdescription =<Label>
           
           <select value={this.state.value} name="description"
@@ -1085,25 +1067,11 @@ description ==="NOSEMASKS")
         </Label>}</>):null}
         </div> 
     return (
-     <div>{  
-      employee && employee.role==="STORE KEEPER" ? (
-        <Button
-          color="dark"
-          
-          onClick={this.toggle}
-          
-        >
-          DISPATCH INVENTORY 
-        </Button>):null}
-        <Modal
-            isOpen={this.state.modal} toggle={this.toggle}>
-            <ModalHeader toggle={this.toggle}>Add product details to dispatch inventory.
-            </ModalHeader>
-            <ModalBody>
-                {this.state.msg ? 
-                ( <Alert  color='danger'>{this.state.msg}</Alert>): null}
-                <Form onSubmit={this.onSubmit}>
+     <div>
+        
+                <Form className='form' onSubmit={this.onSubmit}>
                     <FormGroup>
+                      
                     <Label for="Email"> Receiver Email</Label>
                         <Input
                         type="email"
@@ -1164,8 +1132,7 @@ description ==="NOSEMASKS")
                         </Button>
                     </FormGroup> 
                 </Form>
-            </ModalBody>
-        </Modal>           
+                      
      </div>
      );
    }

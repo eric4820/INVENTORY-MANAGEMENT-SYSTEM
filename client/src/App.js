@@ -14,7 +14,7 @@ import {loadUser}from './actions/authactions'
 
 import ItemModal from './components/auth/ItemModal';
 import UserProfile from './components/UserProfille';
-import DispatchModal from './components/dispatchmodal';
+import InventoryPOS from './components/point-of-sale';
 import EMployee from './components/Employeesprofiles'; 
 
 import InventorySystemsTables from './components/red';
@@ -32,8 +32,8 @@ class App extends Component {
      
         <AppNavbar />
         <div className="inc-exp-container">
-       <ItemModal />
-     <DispatchModal /> 
+       
+     <InventoryPOS /> 
        </div>
        <Stock />
        <div className="inc-exp-containertables">    
@@ -55,6 +55,6 @@ class App extends Component {
       </div>
       </Provider>
     );
-  }
+  }  
 }
-export default App;
+export default App; 
